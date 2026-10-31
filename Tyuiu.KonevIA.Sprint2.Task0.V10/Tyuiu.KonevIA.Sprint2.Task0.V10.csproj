@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><OutputType>Exe</OutputType></PropertyGroup><ItemGroup><ProjectReference Include="..\Tyuiu.KonevIA.Sprint2.Task0.V10.Lib\Tyuiu.KonevIA.Sprint2.Task0.V10.Lib.csproj" /></ItemGroup></Project>
+
+
+
