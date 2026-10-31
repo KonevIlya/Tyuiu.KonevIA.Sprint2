@@ -7,16 +7,16 @@ namespace Tyuiu.KonevIA.Sprint2.Task5.V15.Test;
 public class DataServiceTest
 {
     [DataTestMethod]
-    [DataRow(1, "понедельник")]
-    [DataRow(2, "вторник")]
-    [DataRow(3, "среда")]
-    [DataRow(4, "четверг")]
-    [DataRow(5, "пятница")]
-    [DataRow(6, "суббота")]
-    [DataRow(7, "воскресенье")]
-    [DataRow(8, "понедельник")]
-    [DataRow(364, "воскресенье")]
-    [DataRow(365, "понедельник")]
+    [DataRow(1, "Понедельник")]
+    [DataRow(2, "Вторник")]
+    [DataRow(3, "Среда")]
+    [DataRow(4, "Четверг")]
+    [DataRow(5, "Пятница")]
+    [DataRow(6, "Суббота")]
+    [DataRow(7, "Воскресенье")]
+    [DataRow(8, "Понедельник")]
+    [DataRow(364, "Воскресенье")]
+    [DataRow(365, "Понедельник")]
     public void ValidDay(int k, string expected) =>
         Assert.AreEqual(expected, new DataService().FindDayName(k));
 
@@ -26,3 +26,4 @@ public class DataServiceTest
     public void InvalidDay(int k) =>
         Assert.ThrowsException<ArgumentOutOfRangeException>(() => new DataService().FindDayName(k));
 }
+
